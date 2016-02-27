@@ -1,0 +1,14 @@
+language: go
+
+go:
+  - 1.5
+
+script: make
+
+deploy:
+  provider: s3
+  bucket: "gopher-guru-lambda"
+  local_dir: build
+  acl: public_read
+  region: "eu-west-1"
+  skip_cleanup: true
