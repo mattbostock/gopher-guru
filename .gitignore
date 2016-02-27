@@ -1,2 +1,3 @@
+*.tfstate*
 /build
 /runner.zip
